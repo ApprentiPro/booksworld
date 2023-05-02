@@ -1,9 +1,21 @@
 <template>
-    <div class="welcome-page-container" >
-        this is the welcome page
+    <div class="welcome-page-container">
+        <WelcomeComponent />
     </div>
 </template>
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue'
+import WelcomeComponent from '@/views/widgets/WelcomeComponent.vue';
+export default defineComponent({
+    components:{
+        WelcomeComponent
+    },
+    data() {
+        return{
+
+        }
+        
+    },
+})
 </script>
-<style lang="scss" src="@/assets/styles/welcome.scss">
-</style>
+<style lang="scss" src="@/assets/styles/welcome.scss"></style>
