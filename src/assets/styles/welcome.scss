@@ -1,7 +1,81 @@
 @import './app.scss';
+@import './variable.scss';
 
-.welcome-page-container{
-    border: solid red;
+.welcome-page-container {
     height: 100vh;
-    
+
+    .welcome-title-app-container {
+    background: $primary;
+    text-align: center;
+        span {  
+            display: inline-block;
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 500px;
+            -webkit-font-smoothing: antialiased;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        span::before,
+        span::after {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: -1px;
+            transform-origin: left top;
+            transition: all ease-out 0.3s;
+            content: attr(data-text);
+        }
+
+        span::before {
+            z-index: 1;
+            color: #fff;
+            // transform: scale(1.1, 1) skew(0deg, 10deg);
+        }
+
+        span::after {
+            z-index: 2;
+            color: $primary;
+            text-shadow: -1px 0 1px $primary, 1px 0 1px rgba(0, 0, 0, 0.3);
+            transform: rotateY(-30deg);
+        }
+
+        span:hover::before {
+            transform: scale(1.1, 1) skew(0deg, 5deg);
+        }
+
+        span:hover::after {
+            transform: rotateY(-10deg);
+        }
+
+        span+span {
+            margin-left: 0.3em;
+        }
+        @media (min-width: 20em) {
+            & {
+              font-size: 2em;
+            }
+            & span::before,
+            & span::after {
+              display: block;
+            }
+          }
+          @media (min-width: 30em) {
+            & {
+              font-size: 3em;
+            }
+          }
+          @media (min-width: 40em) {
+            & {
+              font-size: 5em;
+            }
+          }
+          @media (min-width: 60em) {
+            & {
+              font-size: 8em;
+            }
+          }
+    }
+
 }

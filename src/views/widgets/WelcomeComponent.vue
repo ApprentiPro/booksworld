@@ -1,10 +1,17 @@
 <template>
-    <div class="welcome-page-container" >
+    <div class="welcome-page-container">
 
         <div class="welcome-title-app-container">
-            <h1>
-                
-            </h1>
+            <span data-text="B">B</span>
+            <span data-text="O">O</span>
+            <span data-text="O">O</span>
+            <span data-text="K">K</span>
+            <span></span>
+            <span data-text="W">W</span>
+            <span data-text="O">O</span>
+            <span data-text="R">R</span>
+            <span data-text="L">L</span>
+            <span data-text="D">D</span>
         </div>
 
     </div>
@@ -12,18 +19,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import getUserLocale from '@/middlewares/getLocal'
 export default defineComponent({
     name: 'WelcomeComponents',
-   data() {
-       return{
+    data() {
+        return {
 
-       }
-   },
-   mounted() {
-       let userLocal = getUserLocale()
-       console.log("kdkfkfkdf")
-       console.log({userLocal})
-   },
+        }
+    },
 })
 </script>
