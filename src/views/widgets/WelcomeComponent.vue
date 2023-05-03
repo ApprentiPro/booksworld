@@ -12,6 +12,15 @@
             <span data-text="R">R</span>
             <span data-text="L">L</span>
             <span data-text="D">D</span>
+            <div class="version-content-display">
+                <h4>
+                  version:  {{ version }}
+                </h4>
+            </div>
+
+        </div>
+        <div class="welcome-body-context-container">
+           
         </div>
 
     </div>
@@ -23,6 +32,7 @@ export default defineComponent({
     name: 'WelcomeComponents',
     data() {
         return {
+            version:'0.0.1'
 
         }
     },
