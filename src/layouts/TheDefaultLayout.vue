@@ -16,7 +16,7 @@ export default defineComponent({
     <v-layout>
         <v-main>
             <slot></slot>
+            <TheFooter />
         </v-main>
-        <TheFooter />
     </v-layout>
 </template>

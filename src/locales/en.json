@@ -1,6 +1,11 @@
 {
     "translate_key_language":"English",
     "translate_key_licence_description":"booksworld is a  novel-writing tool for creative writers, novelists, and authors which will help you to keep an overview of multiple plot-lines while writing books, novels, or other written works. oStorybook assists you in structuring your book.",
-    "translate_key_next":"Next"
+    "translate_key_next":"Next",
+    "translate_key_trash":"Trash",
+    "translate_key_home":"Home",
+    "translate_key_new_project":"New projet"
+
+
 
 }
