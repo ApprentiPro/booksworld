@@ -1,18 +1,22 @@
 <script lang="ts">
 import { defineComponent } from "vue";
-
+import TheFooter from "@/components/TheFooter.vue";
 export default defineComponent({
     name: "TheDefaultLayout",
+    components:{
+        TheFooter
+    }, 
+    mounted(){
+        console.log("this si the mouted of the default layout")
+    }
 });
 </script>
 
 <template>
     <v-layout>
         <v-main>
-          <!--The <slot> element is a slot outlet that indicates 
-                where the "VIEW" content should be rendered.-->
             <slot></slot>
-            <TheFooter />
         </v-main>
+        <TheFooter />
     </v-layout>
 </template>

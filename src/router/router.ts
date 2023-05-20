@@ -7,15 +7,18 @@ const routes: RouteRecordRaw[] = [
     {
         path: '/',
         name: 'welcome',
-        component: WelcomeView
+        component: WelcomeView, 
+        meta:{
+            layout:'Default'
+        }
     },
     {
         path: '/home',
-        name: 'home',
-        meta:{
-            layout:'Default'
-        }, 
-        component: HomeView
+        name: 'home', 
+        component: HomeView,
+        meta: {
+            layout: 'Default',
+          },
     }
 ]
 
