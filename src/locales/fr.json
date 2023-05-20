@@ -4,5 +4,6 @@
     "translate_key_next":"Suivant", 
     "translate_key_trash":"Corbeille", 
     "translate_key_home":"Accueil", 
-    "translate_key_new_project":"Nouveau projet"
+    "translate_key_new_project":"Nouveau projet", 
+    "translate_key_start":"Commencer"
 }
