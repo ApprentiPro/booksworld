@@ -1,15 +1,17 @@
 <template>
     <div class="home-page-container">
-        <v-container>
+        <v-container  >
             <v-row>
                 <v-col v-for="(item, index) in homeFeauture" :key="index" cols="6" >
                     <div  class="feature-card-content">
-                        <div class="feature-icon-content d-flex justify-center align-center">
-                            <v-icon color="white" :icon="item.icon"></v-icon>
-                            <v-icon icon="mdi-vuetify"></v-icon>
+                        <div class="feature-icon-content d-flex justify-center align-center flex-column">
+                            <v-icon size="45" color="white" :icon="item.icon"></v-icon>
+                            <span class="text-body-1 font-weight-light text-white " >
+                                {{ $t(item.name) }}
+                            </span>
                         </div>
                         <div class="feature-descritpion-content">
-
+                          {{$t(item.description)}}
                         </div>
                         <v-btn position="absolute" style="right: 2rem;bottom:-1rem" >
                             {{ $t('translate_key_start') }}
@@ -23,29 +25,14 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import {FeatureData} from "@/views/pages/home/modules/features";
 
 export default defineComponent({
+
     name: "home-page",
     data: () => {
         return {
-            homeFeauture: [
-                {
-                    icon: 'mdi-plus',
-                    name: 'translate_key_new_project'
-                },
-                {
-                    icon: '',
-                    name: 'translate_key_new_project'
-                },
-                {
-                    icon: '',
-                    name: 'translate_key_new_project'
-                },
-                {
-                    icon: '',
-                    name: 'translate_key_new_project'
-                }
-            ]
+            homeFeauture:FeatureData
         }
     }
 })

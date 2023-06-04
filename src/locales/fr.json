@@ -4,6 +4,10 @@
     "translate_key_next":"Suivant", 
     "translate_key_trash":"Corbeille", 
     "translate_key_home":"Accueil", 
-    "translate_key_new_project":"Nouveau projet", 
-    "translate_key_start":"Commencer"
+    "translate_key_new_project":"Nouveau projet",
+    "translate_key_last_project_open": "Projet recent",
+    "translate_key_template": "Templates",
+    "translate_key_cover_create_title": "Ma couverture",
+    "translate_key_start":"Commencer",
+    "translate_key_projet_description": "Ecrivez votre livre, roman ou tout autre document en ayant une vue d'ensemble sur l'ensemble des différents acteurs et facteurs qui régisse votre recit ou narration "
 }
