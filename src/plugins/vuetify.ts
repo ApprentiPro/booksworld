@@ -9,6 +9,9 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi-svg'
 const vuetify = createVuetify({
   components,
   directives,
+  display:{
+    mobileBreakpoint:418
+  },
   icons: {
     defaultSet: 'mdi',
     sets:{}

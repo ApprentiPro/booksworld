@@ -28,7 +28,15 @@
         height: 85%;
         max-height: 85%;
         text-overflow: ellipsis;
+        overflow: hidden;
         padding: 10px;
+    }
+
+}
+
+@media  (max-width: 480px) {
+    .v-container{
+        height: 100%;
     }
 
 }
