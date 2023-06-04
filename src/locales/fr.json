@@ -9,5 +9,8 @@
     "translate_key_template": "Templates",
     "translate_key_cover_create_title": "Ma couverture",
     "translate_key_start":"Commencer",
-    "translate_key_projet_description": "Ecrivez votre livre, roman ou tout autre document en ayant une vue d'ensemble sur l'ensemble des différents acteurs et facteurs qui régisse votre recit ou narration "
+    "translate_key_projet_description": "Ecrivez votre livre, roman ou tout autre document en ayant une vue d'ensemble sur l'ensemble des différents acteurs et facteurs qui régisse votre recit ou narration ",
+    "translate_key_projet_recent_description": "Ouvrez vos dernier projets et continuez ou vous vous êtez arrêter  ",
+    "translate_key_template_description": " Retrouvez toutes nos propositions de templates selon différentes catégories",
+    "translate_key_cover_description": "Créer votre jolie couverture pour votre magasin, livre, roman, Ebook etc"
 }

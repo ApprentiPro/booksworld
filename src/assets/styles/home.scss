@@ -15,11 +15,20 @@
     height: 150px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     position: relative;
+    display: flex;
 
     .feature-icon-content{
         background: $primary;
         height: 100%;
         width: 150px;
+        min-width: 150px;
+    }
+    .feature-descritpion-content{
+        flex-grow: 1;
+        height: 85%;
+        max-height: 85%;
+        text-overflow: ellipsis;
+        padding: 10px;
     }
 
 }
