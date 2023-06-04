@@ -1,6 +1,6 @@
-import {describe,it} from 'vitest'
+import {test,it} from 'vitest'
 
 
-describe('Get local of user',()=>{
+test('Get local of user',()=>{
     
 })

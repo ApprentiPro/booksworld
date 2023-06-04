@@ -11,5 +11,7 @@ import WelcomeComponent from '../WelcomeComponent.vue'
 
 test('WelcomeComponent is render',()=>{
     const wrapper = mount(WelcomeComponent)
+    console.log(wrapper)
+
 })
 
