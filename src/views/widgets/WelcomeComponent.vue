@@ -13,7 +13,7 @@
             <span data-text="L">L</span>
             <span data-text="D">D</span>
             <div class="version-content-display">
-                <h4>
+                <h4  style="color:#fff;" >
                     version: {{ version }}
                 </h4>
             </div>
@@ -27,10 +27,12 @@
                 <input id='button' @change="GetStartedInformation" type='checkbox'>
                 <label for='button'>
                     <div class='button_inner q'>
-                        <i class='l ion-log-in'></i>
+                        <!--<i class='l ion-log-in'></i> -->
+                      <v-icon icon="mdi-logout" class="l"></v-icon>
                         <span class='t'>{{ $t('translate_key_next') }} </span>
                         <span>
-                            <i class='tick ion-checkmark-round'></i>
+                            <!--<i class='tick ion-checkmark-round'></i>-->
+                          <v-icon icon="mdi-check" class="tick" ></v-icon>
                         </span>
                         <div class='b_l_quad'>
                             <div v-for="(item, index) in 55" :key="index" class='button_spots'></div>
@@ -57,7 +59,7 @@ export default defineComponent({
         GetStartedInformation(){
             setTimeout(() => {
                 router.push('/home')
-            }, 5000);
+            }, 5500);
         }
     }
 
